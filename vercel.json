@@ -1,9 +1,16 @@
 {
     "version": 2,
     "builds": [
-        { "src": "api/*.rb", "use": "@vercel/ruby" }
+      {
+        "src": "HelloVercel.csproj",
+        "use": "@vercel/dotnet"
+      }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/api/hello.rb" }
+      {
+        "src": "/(.*)",
+        "dest": "HelloVercel.csproj"
+      }
     ]
-}
+  }
+  
